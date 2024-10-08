@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7z020clg400-1" LaunchTime="1683734439">
+  <File Type="PA-TCL" Name="Generator_PWM.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="Generator_PWM_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="Generator_PWM_reports.tcl"/>
+  <File Type="RDS-RDS" Name="Generator_PWM.vds"/>
+  <File Type="RDS-UTIL" Name="Generator_PWM_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="Generator_PWM_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="Generator_PWM.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="Generator_PWM_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="Generator_PWM_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/code PWM/module Comparator.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../code PWM/module Comparator.v"/>
+        <Attr Name="ImportTime" Val="1683530307"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/code PWM/module Modulating.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../code PWM/module Modulating.v"/>
+        <Attr Name="ImportTime" Val="1683530455"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/code PWM/module Monostable.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../code PWM/module Monostable.v"/>
+        <Attr Name="ImportTime" Val="1683565139"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/code PWM/module Sawtooth_generator.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../code PWM/module Sawtooth_generator.v"/>
+        <Attr Name="ImportTime" Val="1683530458"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/code PWM/module Generator_of_PWM_signal.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../code PWM/module Generator_of_PWM_signal.v"/>
+        <Attr Name="ImportTime" Val="1683565761"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="Generator_PWM"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

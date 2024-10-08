@@ -1,0 +1,14 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../Generator_PWM.srcs/sources_1/imports/code PWM/module Comparator.v" \
+"../../../../Generator_PWM.srcs/sources_1/imports/code PWM/module Generator_of_PWM_signal.v" \
+"../../../../Generator_PWM.srcs/sources_1/imports/code PWM/module Modulating.v" \
+"../../../../Generator_PWM.srcs/sources_1/imports/code PWM/module Monostable.v" \
+"../../../../Generator_PWM.srcs/sources_1/imports/code PWM/module Sawtooth_generator.v" \
+"../../../../Generator_PWM.srcs/sim_1/imports/code PWM/tb_Generator_PWM.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
